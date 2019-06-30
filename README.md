@@ -1,0 +1,2 @@
+# ScriptTemplates
+Unity Assets/ScriptTemplates
