@@ -1,0 +1,14 @@
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+public class #SCRIPTNAME# : ScriptableObject{
+
+    [MenuItem ("ScriptableObject/#SCRIPTNAME#")]
+    static void CreateExampleAssetInstance ()
+    {
+		var asset = CreateInstance<#SCRIPTNAME#> ();
+		AssetDatabase.CreateAsset(asset, "Assets/#SCRIPTNAME#.asset");
+		AssetDatabase.Refresh();
+    }
+}

@@ -1,2 +1,4 @@
 # ScriptTemplates
 Unity Assets/ScriptTemplates
+
+ScriptTemplatesフォルダをAssets以下にコピーして使用する
