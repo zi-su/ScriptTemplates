@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(menuName="ScriptableObject/#SCRIPTNAME#")]
+public class #SCRIPTNAME# : ScriptableObject
+{
+	public enum ID
+	{
+	}
+
+	[System.Serializable]
+	public class Data
+	{
+		[SerializeField]
+		ID _id;
+		public ID Id{ get { return _id; } private set{_id = value; } }
+		public Data(ID id)
+		{
+			_id = id;
+		}
+	}
+
+	[SerializeField]
+	List<Data> datas = new List<Data>();
+
+	public Data Find(ID id)
+	{
+		return datas.Find(d=>d.Id==id);
+	}
+}
